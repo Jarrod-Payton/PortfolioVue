@@ -17,13 +17,17 @@ const routes = [
     component: loadPage('AboutPage')
   },
   {
+    path: '/basic-fighter',
+    name: 'BasicFighter',
+    component: loadPage('BasicFighterPage')
+  },
+  {
     path: '/account',
     name: 'Account',
     component: loadPage('AccountPage'),
     beforeEnter: authGuard
   }
 ]
-
 export const router = createRouter({
   linkActiveClass: 'router-link-active',
   linkExactActiveClass: 'router-link-exact-active',
