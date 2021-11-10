@@ -20,6 +20,11 @@ const routes = [
     path: '/basic-fighter',
     name: 'BasicFighter',
     component: loadPage('BasicFighterPage')
+  },
+  {
+    path: '/motivation',
+    name: 'Motivation',
+    component: loadPage('MotivationPage')
   }
 ]
 export const router = createRouter({

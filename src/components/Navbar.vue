@@ -4,17 +4,6 @@
       <div class="d-flex flex-column align-items-center"></div>
       <b><h2>Lucas's Workshop</h2></b>
     </router-link>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarText"
-      aria-controls="navbarText"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon" />
-    </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto">
         <li>
@@ -23,6 +12,12 @@
             class="btn text-success lighten-30 selectable text-uppercase"
           >
             Basic Figher Game
+          </router-link>
+          <router-link
+            :to="{ name: 'Motivation' }"
+            class="btn text-success lighten-30 selectable text-uppercase"
+          >
+            Motivation
           </router-link>
         </li>
       </ul>
