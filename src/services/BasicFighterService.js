@@ -3,8 +3,7 @@ import { logger } from "../utils/Logger"
 import Pop from "../utils/Pop"
 
 class BasicFighterService {
-
-  Slap() {
+  Basic() {
     let target = AppState.target.BadGuy
     if (target.weapon.durability <= 0) {
       target.health -= target.weapon.damage
@@ -15,6 +14,12 @@ class BasicFighterService {
     }
   }
 
+  Fireball(health) {
+    let target = AppState.target.BadGuy
+    if (health >= target.maxHealth / 2) {
+
+    }
+  }
 }
 
 export const basicFighterService = new BasicFighterService()
