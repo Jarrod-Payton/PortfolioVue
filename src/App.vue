@@ -13,7 +13,7 @@
           class="Text-White-Color"
           title="Link to Other Projects"
           href="https://github.com/Jarrod-Payton/"
-          >Jarrod Payton</a
+          >Lucas Payton</a
         >
       </h5>
     </div>

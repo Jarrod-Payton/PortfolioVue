@@ -20,12 +20,6 @@ const routes = [
     path: '/basic-fighter',
     name: 'BasicFighter',
     component: loadPage('BasicFighterPage')
-  },
-  {
-    path: '/account',
-    name: 'Account',
-    component: loadPage('AccountPage'),
-    beforeEnter: authGuard
   }
 ]
 export const router = createRouter({
