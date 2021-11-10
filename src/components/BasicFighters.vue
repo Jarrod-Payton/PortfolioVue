@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <h2>{{ target.health }}</h2>
-    <button @click="slap"></button>
+  <div class="text-center">
+    <h2></h2>
+    <button @click="Basic">Basic Weapon Attack</button>
+    <button @click="Fireball(target.health)">Fireball</button>
+    <button @click="Basic">Punch</button>
   </div>
 </template>
 
@@ -12,8 +14,11 @@ import { AppState } from "../AppState";
 export default {
   setup() {
     return {
-      slap() {
-        basicFighterService.Slap();
+      Basic() {
+        basicFighterService.Basic();
+      },
+      Fireball(health) {
+        basicFighterService.Fireball(health);
       },
       target: computed(() => AppState.target.BadGuy),
     };

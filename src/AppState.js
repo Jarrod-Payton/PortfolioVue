@@ -10,11 +10,13 @@ let Fists = {
 
 let BadGuy = {
   health: 100,
+  maxHealth: 100,
   name: 'BadGuy',
   weapon: Fists
 }
 export const AppState = reactive({
   user: {},
   account: {},
-  target: { BadGuy }
+  target: { BadGuy },
+  basicFighterPlayer: {}
 })
